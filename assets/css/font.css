@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'BwGradual Medium';
+    src: url(../font/BwGradual-Medium.woff2);
+    font-style: normal;
+}
+@font-face {
+    font-family: 'BwGradual Bold';
+    src: url(../font/BwGradual-Bold.woff2);
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gok';
+    src: url(../font/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUcel5euIg.woff2);
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../font/Inter-Regular.woff2);
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(../font/Inter-SemiBold.woff2);
+    font-style: normal;
+}

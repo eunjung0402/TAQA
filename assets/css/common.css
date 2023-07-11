@@ -1,0 +1,117 @@
+.blind{
+    position: absolute;   
+    width: 1px; height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}
+
+.group_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.bg_black {
+    background-color: #15171C;
+    color: #fff;
+}
+.bg_greendark {
+    background-color: #00585A;
+    color: #fff;
+}
+
+.bw_medium {
+    font-family: 'BwGradual Medium', sans-serif;
+    font-weight: normal;
+    letter-spacing: -0.02em;
+
+}
+
+::selection {
+    color: #fff;
+    background: rgba(255,103,32,0.99);
+}
+
+.link_btn {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+.link_btn .text {
+    font-family: 'BwGradual Bold', sans-serif;
+    margin-right: 1em;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+.link_btn .link_icon {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 50%;
+}
+
+section h2.title {
+    position: relative;
+    font-size: 0.875rem;
+    margin: 0 0 2em 0;
+    padding: 0 0 0 20px;
+    font-family: 'BwGradual Bold', sans-serif;
+}
+section h2.title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 1.2em;
+    background-image: url("../img/title_icon.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    opacity: 1;
+}
+.slide1_prev.swiper-button-disabled, .slide1_prev.swiper-button-disabled {
+    color: rgba(255,255,255,0.25);
+    cursor: auto;
+}
+
+.link_btn.orange .link_icon::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FF6720;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    content: '';
+}
+.link_btn.wh .link_icon::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    content: '';
+}
+.link_btn:hover .link_icon::before {
+    transform: scale(1);
+}
+
+.slide_wrap {
+    position: relative;
+}
