@@ -48,7 +48,7 @@ $(function(){
 
     // 메뉴 서치바
     $(".gnb_search").click(function(){
-      var searchBarTrue = $('.group_search').hasClass('active');
+      let searchBarTrue = $('.group_search').hasClass('active');
       if(searchBarTrue){
       $(".group_search").removeClass("active");
       $(".group_search").slideUp();
